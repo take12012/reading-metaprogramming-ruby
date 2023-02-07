@@ -1,0 +1,11 @@
+version: '3'
+
+services:
+  ruby_metaprogramming:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    volumes:
+      - type: bind
+        source: ./
+        target: /app

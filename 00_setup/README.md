@@ -17,6 +17,12 @@
 手元でテストが通ったら、現在のブランチをGitHubに向けてpushします。すると、Actionsでのテストが回り、バッジがグリーンに変わるはずです。
 もしわからないことがあれば、勉強会の主催者か周囲の人に聞いてみましょう。
 
+ - dockerコンテナ内で実行
+  
+  ```
+  docker-compose run --rm ruby_metaprogramming bundle exec ruby -Itest test/00_setup/test_try_out.rb
+  ```
+
 ## 読書会の方針
 
 最初の問題は、普段Rubyに慣れ親しんでいる皆さんには、おそらく簡単な問題だったと思います。
